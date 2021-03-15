@@ -7,11 +7,21 @@
             "email": "aliciacrave66@gmail.com"
         }
     ],
-    "extra":  {
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "extra": {
         "wordpress-install-dir": "wp"
-    }
-    ,
+    },
     "require": {
-        "johnpbloch/wordpress": "^5.7"
+        "johnpbloch/wordpress": "^5.7",
+        "wpackagist-theme/best-minimalist": "^1.0"
     }
 }
