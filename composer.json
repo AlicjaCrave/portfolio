@@ -21,7 +21,6 @@
         "wordpress-install-dir": "wp"
     },
     "require": {
-        "johnpbloch/wordpress": "^5.7",
-        "wpackagist-theme/best-minimalist": "^1.0"
+        "johnpbloch/wordpress": "^5.7"
     }
 }
