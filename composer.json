@@ -1,0 +1,17 @@
+{
+    "name": "etudiant/wordpress-install-template",
+    "description": "template d'installation de wordpress",
+    "authors": [
+        {
+            "name": "AlicjaCrave",
+            "email": "aliciacrave66@gmail.com"
+        }
+    ],
+    "extra":  {
+        "wordpress-install-dir": "wp"
+    }
+    ,
+    "require": {
+        "johnpbloch/wordpress": "^5.7"
+    }
+}
