@@ -1,0 +1,6 @@
+# every folder named vendor will be ignored
+vendor
+# thanks to the "/" i can ignore the folder wp at the root of the project
+/wp
+wp-config.php
+
