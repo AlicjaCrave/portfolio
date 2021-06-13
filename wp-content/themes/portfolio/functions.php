@@ -6,7 +6,7 @@ $theme = new Theme (array (
     ),
     'images' => array(
         'post' => array(
-            array('thumb', 300,300, true)
+            array('thumb', 100,100, true)
         )
     )
 ));

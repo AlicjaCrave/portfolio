@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>?ver=20190507" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    
     
     <link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
     <?php
@@ -28,6 +30,8 @@
 	 * as styles, scripts, and meta tags.
 	 */
 	wp_head();
+
+    wp_enqueue_script( 'my-script', get_template_directory_uri() . '/js/my-script.js', array(), true );
 ?>
 
 </head>

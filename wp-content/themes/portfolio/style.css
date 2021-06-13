@@ -1,10 +1,9 @@
 /*!
 Theme Name: Portfolio
-
 Author: A Crave
-
 */
 
+/* RESET CSS */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -55,8 +54,7 @@ table {
 	border-spacing: 0;
 }
 
-
-
+/* MY CSS */
 
 :root {
     --primary-color: #FCFCFC;
@@ -74,8 +72,6 @@ table {
     --bigger-font-size: 1.5rem;
     --biggest-font-size: 2rem;
 }
-
-
 
 body {
     font-family: 'Mitr', sans-serif;
@@ -97,12 +93,13 @@ img {
 }
 
 .photos a img {
+    display: flex;
     margin: var(--font-size);
     border-radius: 2%;
-    width: 100%;
-    /* min-width: 150px;
-    max-width: 300px; */
-    filter: grayscale(100%);
+    width: 100%; 
+    max-width: 300x;
+    max-height: 300px;  
+    filter: grayscale(90%);
 
 }
 
@@ -110,8 +107,6 @@ img {
     background-color: var(--second-font-color);
     cursor: pointer;
     transition: 2s;
-    transform: scale(1.1);
-    transform-box: fill-box;
     filter: grayscale(0%);
 }
 
@@ -129,11 +124,20 @@ img {
 }
 
 
+#top ul{
+    display: inline-block; 
+}
+#top ul li {
+    display: inline-block;
+}
+
+
 .main a img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* width: 90%; */
+     width: 95%; 
+     height: 95%;
     margin: auto;
 }
 
@@ -158,7 +162,7 @@ footer {
 }
 
 #social a {
-    font-size: var(--biggest-font-size);
+    font-size: var(--bigger-font-size);
 }
 
 a {
@@ -170,72 +174,22 @@ a {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 20px auto;
 }
 
-.portrait {
-    display: flex;
-    background-image: url("ph.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    align-self: center;
-    border: var(--accent-color) solid 4px;
+.photo {
     justify-content: center;
-
-}
-
-.image-portrait {
-    filter: grayscale(80%);
-}
-
-
-.title-portrait {
-    text-decoration: none;
-    font-size: var(--bigger-font-size);
-    color: var(--accent-color);
-    margin-top: 100px;
-}
-
-.text-portrait {
-    margin: auto;
-    margin-top: 2%;
-    width: 40%;
+    align-items: center;
+    max-width: 600px;
+    
 }
 
 
 
+/*  404 page */
 
+.not-found {
+    line-height: 2;
+    text-align: center;
+    font-size: var(--biggest-font-size);
 
-
-
-
-
-/* individual page specific css */
-
-.one-image {
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    width: 60%;
-    margin: auto;
-    padding: 10px;
-}
-
-.one-image img {
-    display: flex;
-    align-self: center;
-    width: 400px;
-    height: 400px;
-}
-
-.one-image h2 {
-    color: darkgrey;
-    text-transform: capitalize;
-    font-weight: bold;
-    margin: 40px 20px 0px 40px;
-}
-
-.one-image p {
-    color: darkgrey;
-    margin: 20px 20px 40px 40px;
 }
