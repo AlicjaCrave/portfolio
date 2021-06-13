@@ -1,11 +1,25 @@
 <?php get_header(); ?>
-<div class="single">
+
+
+<?php if (have_posts()): while(have_posts()): the_post() ?>
+    <div class="single">
+
+
+
+            <div class="single-about">
+            <?php the_post_thumbnail(); ?> </a>
             
-            <?php if (have_posts()): while(have_posts()): the_post() ?>
-                <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?> </a>
-              
-            <?php endwhile; endif; ?>
+            <h1><?php the_title(); ?></h1>
+            
+            <p><?php the_content(); ?></p>
+            
+            
         </div>
+    </div>
 
 
-        <?php get_footer(); ?>
+    <?php endwhile; endif; ?>
+   
+
+
+<?php get_footer(); ?>

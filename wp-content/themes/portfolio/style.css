@@ -172,15 +172,22 @@ a {
 /* about page specific css */
 .about {
     display: flex;
-    flex-direction: column;
-    width: 80%;
+    justify-content: center;
+    margin-top: var(--font-size);
+    margin-bottom: var(--font-size);
 }
 
-.photo {
+.photo-about {
     justify-content: center;
     align-items: center;
     max-width: 600px;
-    
+    min-width: 400px;
+}
+
+.photo-about h1 {
+    font-size: var(--bigger-font-size);
+    margin-top: var(--biggest-font-size);
+    margin-bottom: var(--biggest-font-size);
 }
 
 
@@ -192,4 +199,14 @@ a {
     text-align: center;
     font-size: var(--biggest-font-size);
 
+}
+
+
+/*single page*/
+
+.single {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--biggest-font-size);
+    margin-bottom: var(--biggest-font-size);
 }
