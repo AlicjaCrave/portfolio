@@ -185,9 +185,9 @@ a {
 }
 
 .photo-about h1 {
-    font-size: var(--bigger-font-size);
-    margin-top: var(--biggest-font-size);
-    margin-bottom: var(--biggest-font-size);
+    font-size: var(--font-size);
+    margin-top: var(--font-size);
+    margin-bottom: var(--font-size);
 }
 
 
