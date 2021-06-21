@@ -13,3 +13,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /ph/portfolio/index.php [L]
 </IfModule>
+
+
+<Files wp-config.php>
+ order allow,deny
+ deny from all
+</Files>
