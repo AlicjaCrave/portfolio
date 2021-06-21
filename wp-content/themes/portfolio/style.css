@@ -1,0 +1,214 @@
+/*!
+Theme Name: Portfolio
+Author: A Crave
+*/
+
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CSS */
+
+:root {
+    --primary-color: #FCFCFC;
+    --secondary-color: #5D737E;
+
+    --tertiary-color: #30292F;
+
+    --accent-color: #3F4045;
+
+    --first-font-color: #02111B;
+    --second-font-color: #3F3F37;
+
+    --smaller-font-size: 0.5rem;
+    --font-size: 1.2rem;
+    --bigger-font-size: 1.5rem;
+    --biggest-font-size: 2rem;
+}
+
+body {
+    font-family: 'Mitr', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--first-font-color);
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: var(--biggest-font-size);
+}
+
+.photos a img {
+    display: flex;
+    margin: var(--font-size);
+    border-radius: 2%;
+    width: 100%; 
+    max-width: 300x;
+    max-height: 300px;  
+    filter: grayscale(90%);
+
+}
+
+.photos img:hover {
+    background-color: var(--second-font-color);
+    cursor: pointer;
+    transition: 2s;
+    filter: grayscale(0%);
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 1.5rem auto;
+}
+
+#top a{
+    margin: var(--font-size);
+    text-decoration: none;
+    font-size: var(--font-size);
+}
+
+
+#top ul{
+    display: inline-block; 
+}
+#top ul li {
+    display: inline-block;
+}
+
+
+.main a img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     width: 95%; 
+     height: 95%;
+    margin: auto;
+}
+
+
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    width: 90%;
+    margin: auto;
+    padding: var(--smaller-size);
+}
+
+#bottom div {
+    color: var(--first-font-color);
+    font-size: var(--font-size);
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+}
+
+#social a {
+    font-size: var(--bigger-font-size);
+}
+
+a {
+    color: var(--first-font-color);
+}
+
+/* about page specific css */
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--font-size);
+    margin-bottom: var(--font-size);
+}
+
+.photo-about {
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    min-width: 600px;
+}
+
+.photo-about h1 {
+    font-size: var(--font-size);
+    margin-top: var(--font-size);
+    margin-bottom: var(--font-size);
+}
+
+
+
+/*  404 page */
+
+.not-found {
+
+    text-align: center;
+    font-size: var(--font-size) ;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+
+}
+
+
+/*single page*/
+
+.single {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--biggest-font-size);
+    margin-bottom: var(--biggest-font-size);
+}

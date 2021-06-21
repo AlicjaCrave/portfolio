@@ -3,6 +3,10 @@ vendor
 # thanks to the "/" I can ignore the folder wp at the root of the project
 /wp
 /wp-config.php
-/wp-content
 
 
+/wp-content/*
+!/wp-content/
+/wp-content/themes/*
+!/wp-content/themes
+!/wp-content/themes/portfolio
