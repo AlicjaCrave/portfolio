@@ -212,3 +212,27 @@ a {
     margin-top: var(--biggest-font-size);
     margin-bottom: var(--biggest-font-size);
 }
+
+
+#hapi {
+    background-color: black;
+    color: white;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+
+/*CALL PAGE CSS */
+
+#main-call{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-size: cover;
+}
+
+.smallcall{
+    color: green;
+}
