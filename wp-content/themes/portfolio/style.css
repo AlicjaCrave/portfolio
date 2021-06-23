@@ -169,6 +169,13 @@ a {
     color: var(--first-font-color);
 }
 
+#bored{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /* about page specific css */
 .about {
     display: flex;
