@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<div id="main-call">
+<li id="main-call">
     
     <div id="activity-name"></div>
 
-</div>
+</li>
 
 <?php get_footer(); ?>

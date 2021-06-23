@@ -18,28 +18,36 @@ fetch("https://www.boredapi.com/api/activity?participants=1 ")
 
     const activityName = data.activity;
     const activityLink = data.link;
-    const activityParticipants = data.participants;
+  
     const activityType = data.type;
     const activityPrice = data.price;
     
     const name = document.createElement("h1");
-    name.classList.add('smallcall');
-    name.innerHTML =  activityName;
-    const link = document.createElement("h2.smallcall");
-    link.innerHTML =  activityLink;
-    const participants = document.createElement("h2");
-    participants.innerHTML =  activityParticipants;
-    const type = document.createElement("h2");
-    type.innerHTML =  activityType;
-    const price = document.createElement("h2");
-    price.innerHTML =  activityPrice;
+  
+    name.classList.add('activity-name-style');
+    name.innerHTML =  "Activity: " + activityName;
+
+
+    const link = document.createElement("a");
+    link.classList.add('smallcall');
+    link.innerHTML =  "Link: " + "<a href=" + activityLink + ">" + activityName +  "</a>" ;
+    // si le lien n'existe pas, j'ajoute la classe 'display-none', on ne l'affiche pas 
+    if (activityLink == 0){
+      link.classList.add('display-none');
+    }
+
+
+    const type = document.createElement("p");
+    type.classList.add('smallcall');
+    type.innerHTML =  "Type of activity: " + activityType;
+
+    const price = document.createElement("p");
+    price.classList.add('smallcall');
+    price.innerHTML =  "Price: " + activityPrice;
 
    
     activityDiv.appendChild(name);
     activityDiv.appendChild(link);
-    activityDiv.appendChild(participants);
     activityDiv.appendChild(type);
     activityDiv.appendChild(price);
-
-
   }   
