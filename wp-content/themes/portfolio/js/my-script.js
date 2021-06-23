@@ -3,6 +3,8 @@ fetch("https://www.boredapi.com/api/activity?participants=1 ")
     if (response.ok) {
       return response.json();
     } else {
+      //The error object is a built-in object that provides a standard
+      // set of useful information when an error occurs, such as a stack trace and the error message. For example:
       throw new Error("NETWORK RESPONSE ERROR");
     }
   })
