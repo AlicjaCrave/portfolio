@@ -262,3 +262,25 @@ a {
 .display-none{
     display: none;
 }
+
+
+/* form */
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem ;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.send{
+    align-self: center;
+    background-color: lightblue;
+    border-radius: 5px;
+    color: white;
+}
+textarea{
+    resize: none;
+}

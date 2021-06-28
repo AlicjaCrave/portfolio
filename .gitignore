@@ -10,3 +10,9 @@ vendor
 /wp-content/themes/*
 !/wp-content/themes
 !/wp-content/themes/portfolio
+
+
+# I am not ignoring new plugin for the form
+/wp-content/plugins/*
+!/wp-content/plugins
+!/wp-content/plugins/portfolio-form
