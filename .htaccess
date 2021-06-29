@@ -15,6 +15,7 @@ RewriteRule . /ph/portfolio/index.php [L]
 </IfModule>
 
 
+
 <Files wp-config.php>
  order allow,deny
  deny from all
