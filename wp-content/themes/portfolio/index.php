@@ -12,7 +12,7 @@
             <?php endwhile; endif; ?>
         </div>
   
-    <a id="bored" href="http://localhost/ph/portfolio/call/"> BORED? </a>   
+       
 
     </main>
 

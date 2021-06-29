@@ -22,7 +22,7 @@
 
     <?php endwhile; endif; ?>
    
-
+    <a href="http://localhost/ph/portfolio/call/">Bored?</a>
 
 <?php get_footer(); ?>
 
