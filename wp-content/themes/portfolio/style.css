@@ -179,20 +179,16 @@ a {
 /* about page specific css */
 .about {
     display: flex;
-    justify-content: center;
-    margin-top: var(--font-size);
-    margin-bottom: var(--font-size);
+    flex-direction: column;
 }
-
-.photo-about {
-    justify-content: center;
-    align-items: center;
+.about-photo-t-t{
+    align-self: center;
     max-width: 600px;
-    min-width: 600px;
+    min-width: 400px;
+    height: auto;
 }
-
-.photo-about h1 {
-    font-size: var(--font-size);
+.about-title{
+    font-size: var(--bigger-font-size);
     margin-top: var(--font-size);
     margin-bottom: var(--font-size);
 }
@@ -283,4 +279,7 @@ a {
 }
 textarea{
     resize: none;
+    width: 300px;
+    height: 300px;
+
 }

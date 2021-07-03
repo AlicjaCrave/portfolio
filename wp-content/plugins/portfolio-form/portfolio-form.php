@@ -12,7 +12,7 @@ function portfolio_form()
     // after submitting the form, it is sending us to other page.
     $content .= '<form method="post" class="form-style"  action= "http://localhost/ph/portfolio/merci/">';
 
-    $content .= '<label for="your_name">Name</label>';
+    $content .= '<label for="your_name">Nom</label>';
     $content .= '<br>';
 
     $content .= '<input type="text" name="your_name"/>';
@@ -23,7 +23,7 @@ function portfolio_form()
     $content .= '<input type="email" name="your_email" />';
     $content .= '<br>';
 
-    $content .= '<label for="your_comments">Comments</label>';
+    $content .= '<label for="your_comments">Commentaire</label>';
     $content .= '<br>';
     $content .= '<textarea name="your_comments"> </textarea>';
     $content .= '<br>';
